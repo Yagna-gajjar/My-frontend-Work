@@ -603,6 +603,19 @@ nav .nav-link:hover,
     }
 }
 
+@media screen and (max-width: 600px) {
+    .about-discription .image-part .image {
+        width: 50%;
+    }
+}
+
+
+@media screen and (max-width: 500px) {
+    .about-discription .image-part .image {
+        width: 70%;
+    }
+}
+
 @media screen and (max-width: 425px) {
 
     #container {
@@ -640,9 +653,6 @@ nav .nav-link:hover,
         overflow-x: hidden;
     }
 
-    .about-discription .image-part .image {
-        width: 70%;
-    }
 }
 
 @media screen and (max-width: 375px) {
@@ -658,6 +668,10 @@ nav .nav-link:hover,
 
     #container .counts span {
         font-size: 8px;
+    }
+
+    .about-discription .image-part .image {
+        width: 90%;
     }
 }
 
