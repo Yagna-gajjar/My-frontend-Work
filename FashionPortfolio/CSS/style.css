@@ -591,7 +591,6 @@ nav .nav-link:hover,
         width: 100%;
         padding-block: 30px;
         overflow-y: hidden;
-        background-color: red;
     }
 
     .about-discription .image-part .image {
