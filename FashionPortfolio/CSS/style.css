@@ -847,7 +847,6 @@ nav .nav-link:hover,
     .feedback .all-testimonials {
         gap: 70px;
         padding-inline: 40px;
-        padding-block: 10px;
     }
 
     .feedback .testimonial img {
