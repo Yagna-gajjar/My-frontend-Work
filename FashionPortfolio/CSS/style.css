@@ -387,13 +387,14 @@ nav .nav-link:hover,
 }
 
 .about-discription {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
+    display: flex;
+    width: 100%;
     padding-top: 8%;
 }
 
 .about-discription .discription {
     padding-inline: 100px;
+    width: 60%;
 }
 
 .about-discription .discription h1 {
@@ -420,14 +421,18 @@ nav .nav-link:hover,
     align-items: center;
 }
 
-.about-discription .image {
-    width: 300px;
-    height: 500px;
+.about-discription .image-part {
+    width: 35%;
+}
+
+.about-discription .image-part .image {
+    width: 100%;
+    aspect-ratio: 1/1;
 }
 
 .about-discription .image .img1 {
     position: relative;
-    width: 65%;
+    width: 37%;
     height: 40%;
     border-radius: 10%;
 }
@@ -439,9 +444,9 @@ nav .nav-link:hover,
 
 .about-discription .image .img2 {
     position: relative;
-    top: 8%;
-    left: 33%;
-    width: 35%;
+    top: 10%;
+    left: 23%;
+    width: 17%;
     height: 20%;
     border-radius: 10%;
 }
@@ -454,9 +459,8 @@ nav .nav-link:hover,
 
 .about-discription .image .img3 {
     position: relative;
-    top: -12%;
-    left: 83%;
-    width: 65%;
+    left: 50%;
+    width: 37%;
     height: 40%;
     border-radius: 10%;
 }
@@ -576,16 +580,22 @@ nav .nav-link:hover,
     }
 
     .about-discription .discription {
+        width: 90%;
         padding-inline: 30px;
     }
 
-    .image-part {
+    .about-discription .image-part {
         display: flex;
         justify-content: center;
         align-items: center;
         width: 100%;
-        padding-top: 30px;
+        padding-block: 30px;
         overflow-y: hidden;
+        background-color: red;
+    }
+
+    .about-discription .image-part .image {
+        width: 40%;
     }
 
     .about-discription .discription p {
@@ -629,6 +639,10 @@ nav .nav-link:hover,
     .image-part {
         justify-content: center;
         overflow-x: hidden;
+    }
+
+    .about-discription .image-part .image {
+        width: 70%;
     }
 }
 
