@@ -1,0 +1,30 @@
+import { createContext, useContext, useState, useEffect } from "react"
+
+const AuthContext = createContext(null)
+
+export const useAuth = () => useContext(AuthContext)
+
+export const AuthProvider = ({ children }) => {
+    const [isLoggedIn, setIsLoggedIn] = useState(false)
+
+    useEffect(() => {
+        const user = localStorage.getItem("user")
+        if (user) setIsLoggedIn(true)
+    }, [])
+
+    const login = () => {
+        localStorage.setItem("user", "true")
+        setIsLoggedIn(true)
+    }
+
+    const logout = () => {
+        localStorage.removeItem("user")
+        setIsLoggedIn(false)
+    }
+
+    return (
+        <AuthContext.Provider value={{ isLoggedIn, login, logout }}>
+            {children}
+        </AuthContext.Provider>
+    )
+}

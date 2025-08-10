@@ -1,0 +1,54 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --color-brand: 189 94% 43%;
+    --color-brand-light: 187 92% 69%;
+    --color-brand-dark: 192 91% 36%;
+    --color-brand-hover: 188 86% 53%;
+    --color-brand-contrast: 0 0% 100%;
+
+    --color-bg: 180 76% 97%;
+    --color-bg-dark: 222 47% 11%;
+
+    --color-text: 222 47% 11%;
+    --color-text-muted: 215 16% 47%;
+    --color-text-light: 0 0% 100%;
+
+    --color-border: 214 32% 91%;
+  }
+
+  body {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+h2 {
+  font-size: 1.5rem;
+  font-weight: 900;
+  font-family: poppins, sans-serif;
+  color: hsl(var(--color-text));
+}
+
+.scrollbar-hide {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+.fade-mask-x {
+  mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+  -webkit-mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+}
+
+.fade-mask-y {
+  mask-image: linear-gradient(to bottom, transparent, black 10%, black 90%, transparent);
+  -webkit-mask-image: linear-gradient(to bottom, transparent, black 10%, black 90%, transparent);
+}
